@@ -1,14 +1,8 @@
 import { Label } from "@radix-ui/react-dropdown-menu";
+import { Choose, Explore, LiveNav, Opsitons } from "./types";
+import { MoveIndia } from "./components/liveandwork/navbarContent/MoveIndia";
+import { chooseIndia } from "./components/liveandwork/navbarContent/chooseIndia";
 
- export interface Opsitons {
-  label: string;
-  href: string;
-}
-
-export interface Explore {
-  label: string;
-  href: string;
-}
 
 export const products = [
     
@@ -98,11 +92,11 @@ export const opsitons: Opsitons[] = [
 
   export const explore: Explore[] = [
     {
-      label: "Northean India",
+      label: "Northern India",
       href: "/visit/placetovisit/northan",
     },
     {
-      label: "Southn India",
+      label: "Southern India",
       href: "/visit/placetovisit/southern",
     },
     {
@@ -110,7 +104,7 @@ export const opsitons: Opsitons[] = [
      href: "/visit/placetovisit/western"
     },
     {
-     label: "East India",
+     label: "Eastern India",
      href: "/visit/placetovisit/eastern"
     },
     {
@@ -211,3 +205,166 @@ export const PlaaTrip = [
      href: "/workingholidays"
    },
 ]
+
+export const livenav : LiveNav[]= [
+
+  {
+      title: "Choose",
+      label: "India",
+      component: chooseIndia,
+      
+  },
+  {
+    title: "Move",
+    label : "to India",
+    component: MoveIndia,
+    
+  },
+  {
+    title: "Live",
+    label: "in India",
+    component: chooseIndia,
+    
+  },
+  {
+    title: "Work",
+    label: "in India",
+    component: chooseIndia,
+    
+  },
+]
+
+export const ChooseIndia: Choose[] = [
+        {
+          title: "Balanced Lifistyle",
+          href : "/visit"
+        },
+        {
+          title: "Safe & secure",
+          href : "/visit"
+        },
+        {
+          title: "Family friendly",
+          href : "/visit"
+        },
+        {
+          title: "Clean and Beautiful",
+          href : ""
+        },
+        {
+          title: "A warm WellCome",
+          href : ""
+        },
+        {
+          title: "Compare India",
+          href : ""
+        },
+        {
+          title: "Regions & cities",
+          href : ""
+        },
+        {
+          title: "Low cost",
+          href : ""
+        },
+]
+
+export const MovetoIndia: Choose[] = [
+   {
+    title: "Visas For India",
+    href: ""
+   },
+   {
+    title: "Before You apply",
+    href: "Before You Live"
+   },
+   {
+    title: "When You Arrive",
+    href: ""
+   },
+   {
+    title: "Access help and Support",
+    href: ""
+   },
+]
+
+
+export const LiveIndia: Choose[] = [
+  {
+    title: "Tips for Setting in",
+    href:""
+  },
+  {
+    title: "Logistics for Getting started",
+    href:""
+  },
+  {
+    title: "Money & tax",
+    href:""
+  },
+  {
+    title: "Housing",
+    href:""
+  },
+  {
+    title: "HealthCare",
+    href:""
+  },
+  {
+    title: "Education and schooling",
+    href:""
+  },
+  {
+    title: "Safety",
+    href:""
+  },
+  {
+    title: "Recreation",
+    href:""
+  },
+  {
+    title: "History & government",
+    href:""
+  },
+  {
+    title: "Hindi language",
+    href:""
+  },
+  {
+    title: "Migrant settlement strategy",
+    href:""
+  },
+]
+
+export const WorkIndia: Choose[] = [
+  {
+    title: "Job Market & key industries",
+    href: ""
+  },
+  {
+    title: "Finding & Applying for Jobs",
+    href: ""
+  },
+  {
+    title: "Our IN way of working",
+    href: ""
+  },
+  {
+    title: "Support in the workplace",
+    href: ""
+  },
+  {
+    title: "Employment right",
+    href: ""
+  },
+  {
+    title: "Working Holidays",
+    href: ""
+  },
+  {
+    title: "",
+    href: ""
+  },
+]
+
+// TODO MOVE LIVE WORK STUDY INVEST TYPES ADDING
